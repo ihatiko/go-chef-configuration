@@ -34,7 +34,6 @@ func ToConfig[T any](t T, opts ...Options) error {
 		if err != nil {
 			return err
 		}
-		// TODO support various OS
 		s.Path = path.Join(p, configPath)
 	}
 	f, err := os.ReadFile(s.Path)
